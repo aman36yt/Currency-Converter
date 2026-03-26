@@ -1,0 +1,58 @@
+html {
+  --s: 60px; /* control the size*/
+  --c1: #b09f79;
+  --c2: #303336;
+  
+  --_g: #0000 83%,var(--c1) 85% 99%,#0000 101%;
+  background:
+    radial-gradient(27% 29% at right ,var(--_g)) calc(var(--s)/ 2) var(--s),
+    radial-gradient(27% 29% at left  ,var(--_g)) calc(var(--s)/-2) var(--s),
+    radial-gradient(29% 27% at top   ,var(--_g)) 0 calc(var(--s)/ 2),
+    radial-gradient(29% 27% at bottom,var(--_g)) 0 calc(var(--s)/-2)
+    var(--c2);
+  background-size: calc(2*var(--s)) calc(2*var(--s));
+    /* margin: 0;
+    padding: 0; */
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    color: aliceblue;
+}
+.container{
+    background-color: #1b1b1b;
+    padding: 10px;
+    border-radius:10px;
+    text-align: center;
+}
+.curr-first,.curr-second{
+    padding:15px;
+    display: flex;
+    justify-content: space-between;
+}
+#currency-con{
+    padding: 4px;
+    font-size:17px;
+    background-color: transparent;
+    color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #1b1b1b;
+}
+#worth-first,#worth-second{
+    background: transparent;
+    color: aliceblue;
+    font-size:20px;
+    border: 0;
+    text-align: right;
+}
+.exchange-amount{
+    font-size: 18px;
+    font-weight: 700;
+}
+select:focus,input:focus{
+    outline: 0;
+}
