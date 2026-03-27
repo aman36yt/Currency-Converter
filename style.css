@@ -27,13 +27,17 @@ body{
     padding: 10px;
     border-radius:10px;
     text-align: center;
+    transition: box-shadow 0.4s ease-in-out;
 }
-.curr-first,.curr-second{
-    padding:15px;
+.container:hover{
+    box-shadow: 2px 4px 10px white;
+}
+.curr-con{
+    padding:10px;
     display: flex;
     justify-content: space-between;
 }
-#currency-con{
+#currency-first,#currency-second{
     padding: 4px;
     font-size:17px;
     background-color: transparent;

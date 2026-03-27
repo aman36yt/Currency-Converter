@@ -9,8 +9,8 @@
 <body>
     <div class="container">
         <h1>Currency Converter</h1>
-        <div class="curr-first">
-            <select id="currency-con">
+        <div class="curr-con">
+            <select id="currency-first">
                 <option value="USD" selected>USD</option>
                 <option value="AUD">AUD</option>
                 <option value="INR">INR</option>
@@ -21,8 +21,8 @@
             </select>
             <input type="number" id="worth-first" value="1" min="0">
         </div>
-        <div class="curr-second">
-            <select id="currency-con">
+        <div class="curr-con">
+            <select id="currency-second">
                 <option value="USD">USD</option>
                 <option value="AUD">AUD</option>
                 <option value="INR" selected>INR</option>
@@ -35,5 +35,7 @@
         </div>
         <p id="exchange-amount" class="exchange-amount"> 1 USD = 94.13 INR</p>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
